@@ -13,16 +13,20 @@ import java.util.List;
  * @author Mostafizur
  */
 public class Test {
-    public static void main(String[] args) {
-        List<String> names = new ArrayList<String>();
-      names.add("Robb");
-      names.add("Bran");
-      names.add("Rick");
-      names.add("Bran");
-        if (names.remove("Bran")) {
-            names.remove("Rick");
-            System.out.println(names);
+    static int count =0;
+     int i = 0;
+     public  void changeCount(){
+          while (i< 5) {
+            i++;
+            count++;
         }
-        System.out.println(names);
+     }
+    public static void main(String[] args) {
+       Test check1=new Test();
+        Test check2=new Test();
+        check1.changeCount();
+        check2.changeCount();
+        System.out.println(check1.count+" : " + check2.count);
+  
     }
 }
