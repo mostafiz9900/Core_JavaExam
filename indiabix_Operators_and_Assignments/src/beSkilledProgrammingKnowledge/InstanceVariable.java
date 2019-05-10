@@ -19,6 +19,7 @@ public class InstanceVariable {
     }
 
     public void setSalary(double empSalary) {
+         
         salary = empSalary;
     }
 
